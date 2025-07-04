@@ -1,0 +1,7 @@
+Placez vos images de stagiaires dans ce dossier :
+- img1.jpg à img8.jpg pour les photos des stagiaires
+- default-male.jpg pour l'image par défaut masculine
+- default-female.jpg pour l'image par défaut féminine
+- default-avatar.jpg pour l'avatar par défaut des utilisateurs
+
+Les images doivent être au format JPG ou PNG avec une taille recommandée de 200x200 pixels.

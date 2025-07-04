@@ -1,0 +1,376 @@
+/* Variables de couleurs inspirées du CSS original */
+:root {
+  --primary-color: #2c3e50;
+  --secondary-color: #27ae60;
+  --accent-color: #e74c3c;
+  --light-color: #ecf0f1;
+  --dark-color: #2c3e50;
+  --success-color: #27ae60;
+  --warning-color: #f39c12;
+  --danger-color: #e74c3c;
+  --info-color: #3498db;
+}
+
+/* Styles globaux */
+html, body { 
+  height: 100%; 
+  margin: 0; 
+  font-family: 'Roboto', sans-serif;
+  background-color: #f5f7fa;
+}
+
+/* Personnalisation Angular Material */
+.mat-toolbar {
+  background-color: var(--primary-color) !important;
+  color: white !important;
+}
+
+.mat-raised-button.mat-primary {
+  background-color: var(--primary-color) !important;
+}
+
+.mat-raised-button.mat-accent {
+  background-color: var(--secondary-color) !important;
+}
+
+.mat-raised-button.mat-warn {
+  background-color: var(--danger-color) !important;
+}
+
+/* Styles pour les cartes */
+.mat-card {
+  margin: 16px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Styles pour les tableaux */
+.mat-table {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.mat-header-cell {
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: 600;
+}
+
+/* Styles pour les formulaires */
+.mat-form-field {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+/* Styles pour les avatars */
+.avatar-large {
+  width: 80px;
+  height: 80px;
+  border: 3px solid white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.avatar-small {
+  width: 40px;
+  height: 40px;
+}
+
+/* Styles pour les badges */
+.badge {
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+  color: white;
+}
+
+.badge-success {
+  background-color: var(--success-color);
+}
+
+.badge-info {
+  background-color: var(--info-color);
+}
+
+.badge-warning {
+  background-color: var(--warning-color);
+}
+
+.badge-danger {
+  background-color: var(--danger-color);
+}
+
+/* Styles pour les statistiques */
+.stats-card {
+  text-align: center;
+  padding: 24px;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: white;
+  border-radius: 8px;
+  margin: 16px;
+}
+
+.stats-number {
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin-bottom: 8px;
+}
+
+.stats-label {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+/* Styles pour les actions */
+.action-buttons {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+/* Styles pour la recherche */
+.search-container {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.search-container .mat-form-field {
+  flex: 1;
+  min-width: 200px;
+  margin-bottom: 0;
+}
+
+/* Styles pour les états des utilisateurs */
+.user-active {
+  background-color: rgba(39, 174, 96, 0.1);
+}
+
+.user-inactive {
+  background-color: rgba(231, 76, 60, 0.1);
+}
+
+/* Styles pour les animations */
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .search-container {
+    flex-direction: column;
+  }
+  
+  .search-container .mat-form-field {
+    width: 100%;
+  }
+  
+  .action-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .action-buttons button {
+    width: 100%;
+  }
+}
+
+/* Styles pour les messages d'erreur et de succès */
+.mat-snack-bar-container {
+  border-radius: 8px !important;
+}
+
+/* Styles pour les dialogues */
+.mat-dialog-container {
+  border-radius: 8px !important;
+}
+
+/* Styles pour les onglets */
+.mat-tab-group {
+  margin: 16px;
+}
+
+/* Styles pour les listes */
+.mat-list-item {
+  border-bottom: 1px solid #eee;
+}
+
+.mat-list-item:last-child {
+  border-bottom: none;
+}
+
+/* Styles pour les menus */
+.mat-menu-panel {
+  border-radius: 8px !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Styles pour les sélecteurs */
+.mat-select-panel {
+  border-radius: 8px !important;
+}
+
+/* Styles pour les cases à cocher et boutons radio */
+.mat-radio-button {
+  margin-right: 16px;
+}
+
+.mat-checkbox {
+  margin-right: 16px;
+}
+
+/* Styles pour les barres de progression */
+.mat-progress-bar {
+  border-radius: 4px;
+}
+
+.mat-progress-spinner {
+  margin: 16px auto;
+}
+
+/* Styles pour les puces */
+.mat-chip {
+  border-radius: 16px !important;
+}
+
+.mat-chip.mat-standard-chip.mat-chip-selected {
+  background-color: var(--primary-color) !important;
+  color: white !important;
+}
+
+/* Styles pour les expansions panels */
+.mat-expansion-panel {
+  border-radius: 8px !important;
+  margin-bottom: 16px !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Styles pour les steppers */
+.mat-stepper-horizontal {
+  margin: 16px;
+}
+
+.mat-step-header {
+  border-radius: 8px;
+}
+
+/* Styles pour les sliders */
+.mat-slider {
+  width: 100%;
+}
+
+/* Styles pour les datepickers */
+.mat-datepicker-popup {
+  border-radius: 8px !important;
+}
+
+/* Styles pour les tooltips */
+.mat-tooltip {
+  border-radius: 4px !important;
+  font-size: 12px !important;
+}
+
+/* Styles pour les sidebars */
+.mat-drawer {
+  border-radius: 0 8px 8px 0 !important;
+}
+
+/* Styles pour les bottom sheets */
+.mat-bottom-sheet-container {
+  border-radius: 8px 8px 0 0 !important;
+}
+
+/* Styles pour les paginations */
+.mat-paginator {
+  border-radius: 0 0 8px 8px;
+  background-color: #fafafa;
+}
+
+/* Styles pour les tris */
+.mat-sort-header-arrow {
+  color: var(--primary-color);
+}
+
+/* Styles personnalisés pour l'application */
+.page-container {
+  padding: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.page-header {
+  margin-bottom: 32px;
+}
+
+.page-title {
+  font-size: 2rem;
+  font-weight: 300;
+  color: var(--dark-color);
+  margin-bottom: 8px;
+}
+
+.page-subtitle {
+  color: #666;
+  font-size: 1rem;
+}
+
+.content-card {
+  margin-bottom: 24px;
+}
+
+.form-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.button-container {
+  display: flex;
+  gap: 16px;
+  justify-content: flex-end;
+  margin-top: 24px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.mt-16 {
+  margin-top: 16px;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
+}
+
+.p-16 {
+  padding: 16px;
+}
+
+.elevation-2 {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.border-radius-8 {
+  border-radius: 8px;
+}
