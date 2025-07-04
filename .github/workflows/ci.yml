@@ -2,7 +2,7 @@ name: Angular CI/CD with SonarCloud
 
 on:
   push:
-    branches:
+    branches: 
       - main
   pull_request:
     branches:
