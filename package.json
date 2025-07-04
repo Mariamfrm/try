@@ -10,6 +10,7 @@
     "start": "ng start"
   },
   "dependencies": {
+    "@angular/cli": "^15.0.0",
     "@angular/animations": "latest",
     "@angular/cdk": "latest",
     "@angular/common": "latest",
